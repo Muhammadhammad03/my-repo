@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      .container-fluid{
+            background-color: rgb(7, 7, 78);
+      }
+      .navbar{
+      padding: 0px;
+      }
+      
+          .navbar-brand{
+            margin-left: 100px;    
+            justify-content: center;     
+            color: white;
+        }
+        .nav-item{
+        padding-left: 50px;
+        justify-content: center;
+       
+        }
+        .navbar-nav{
+          justify-content: center;
+          text-align: center;
+          margin-right: auto;
+          margin-left: auto;
+          font-weight: bold;
+          font-style: italic; 
+          color: white;
+        }
+        .nav-link{
+          color: white;
+        }
+        .nav-link:hover{
+          color: rgb(153, 153,226);
+          font-size: 1.01rem;
+        }
+        .mainsection{
+          display: flex;
+          justify-content: space-around;
+          margin: 25px 0;
+        }
+        .mainsection div{
+          width: 40%;
+        }
+        .rightsection img{
+         margin: 50px 0;
+        }
+        body{
+          background-color: rgb(0,0,33);
+        }
+        .navbar-toggler{
+          background-color: white;
+        }
+        .leftsection{
+          color: white;
+          margin: 70px 20px;
+          font-size: 40px;
+        }
+        .leftsection h2{
+          font-size: 40px;
+          font-style: initial;
+          font-weight: 400;
+        }
+        .purple{
+          color: rgb(170, 113, 222);
+        }
+        #element{
+          color: rgb(170, 113, 222);
+        }
+        hr{
+          color: white;
+          width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        
+        }
+        .section2{
+          display: flex;
+          justify-content: space-around;
+          margin: 20px 100px  ;
+        }
+        .right{
+          text-align: center;
+          color: white;
+          margin: 30px 50px;
+        }
+        .left{
+          margin: 40px 0;
+        }
+        .colorme{
+        color: rgb(170, 113, 222); ;
+        }
+        .section3 h2{
+          text-align: center;
+          color: white;
+          font-style: italic;
+          
+        }
+        .line{
+          width: 100px;
+          background-color: red;
+          border: 2px solid black;
+          height: 7px;
+          margin-right: auto;
+          margin-left: auto;
+        }
+        .ourservices{
+          display: flex;color: white;
+          justify-content: space-around;
+          justify-content: center;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        
+        .ourservices div{
+          font-weight: bolder;
+          margin: 30px 50px 20px 40px;
+          padding: 40px;
+          background-color: rgb(48, 48, 48);
+         
+        }
+        .services{
+          color: white;
+          text-align: center;
+        }
+        .services h2{
+          font-style: italic;
+          font-weight: 600;
+        }
+        
+        .ourservices i{
+          font-size: 30px;
+        }
+        footer{
+          background-color: rgb(59, 59, 59);
+          height: 30px;
+          justify-content: center;
+          color: white;
+          text-align: center;
+        }
+        
+        /* * {box-sizing:border-box} */
+        .section3 p{
+          color: white;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+          margin-bottom: auto;
+          font-weight: bold;
+          margin-top: 20px;
+        }
+
+            .container {
+              width: 60%;
+            }
+
+            .skills {
+              text-align: right;
+              padding-top: 5px; 
+              padding-bottom: 5px; 
+              color: white; 
+            }
+
+            .html {width: 95%; background-color: #2196F3;} 
+            .css {width: 90%; background-color: #2196F3;} 
+            .js {width: 50%; background-color: #2196F3;}
+            .jQuery {width: 55%; background-color: #2196F3;} 
+        @media only screen and (max-width:750px){
+          .section2{
+            display: block;
+            text-align: center;
+            justify-content: center;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: auto;
+          }
+          .ourservices{
+            display: block;
+          }
+        }
+          
+    </style>
+</head>
+<body>
+    <!-- nav start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><b>Portfolio</b></a>
+          <button class="navbar-toggler" id="button"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" >Info</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- nav end -->
+      <section class="mainsection">
+        <div class="leftsection"><h2>Hi, My name is <span class="purple">Hammad</span></h2>
+        <h2>and i am a</h2>
+        <span id="element"></span>
+        </div>
+        <div class="rightsection"><img src="image/new.png" alt="" width="80%"></div>
+      </section>
+      <hr><br>
+
+      <section class="section3">
+        <h2>My <span class="colorme">Skills</span></h2>
+        <div class="line"></div><br><br>
+                    <p>HTML<i class="fa-brands fa-html5" style="color: #6b71de;"></i></p>
+            <div class="container">
+              <div class="skills html">95%</div>
+            </div>
+
+            <p>CSS <i class="fa-brands fa-css3-alt" style="color: #6b71de;"></i></p>
+            <div class="container">
+              <div class="skills css">90%</div>
+            </div>
+
+            <p>JavaScript <i class="fa-brands fa-square-js" style="color: #6b71de;"></i></p>
+            <div class="container">
+              <div class="skills js">50%</div>
+            </div>
+
+            <p>jQuery <i class="fa-brands fa-square-js" style="color: #6b71de;"></i></p>
+            <div class="container">
+              <div class="skills jQuery">55%</div>
+            </div>
+      </section>
+      <br><br><hr><br>
+
+      <section class="section2">
+        <div class="left"><img src="image/new.png" alt="" width="300px" height="250px"></div>
+        <div class="right">
+          <h1 >About <span class="colorme">Me</span></h1>
+          <div class="line"></div><br>
+          <p>
+            I'm Hammad, and I'm a friendly person who loves creating websites and designs. I'm skilled as a frontend web developer, graphic designer, and web designer. Building websites is like crafting digital worlds where everything works smoothly, and I make sure they look awesome too. As a graphic designer, I enjoy playing with colors and visuals to make things eye-catching. Being a web designer means I organize and structure websites so that they're easy to explore. I believe in the power of creativity and technology working hand in hand. Learning is my jam, and I'm always curious about the latest trends in design and web development. Let's team up to make the web a cooler place!</p>
+        </div>
+      </section>
+      
+
+
+      <section class="services">
+        <h2>Our <span class="colorme">Services</span></h2>
+        <div class="line"></div>
+        <div class="ourservices">
+        <div><i class="fa-solid fa-bars" style="color: #bd2828;"></i>
+        <h4>Web Development</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem temporibus consequatur, nisi fuga eius atque.</p>
+        </div>
+        <div><i class="fa-regular fa-user" style="color: #bd2828;"></i>
+          <h4>Web Development</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, voluptates quibusdam inventore quasi laboriosam suscipit.</p></div>
+        <div><i class="fa-regular fa-bell" style="color: #bd2828;"></i>
+          <h4>Web Development</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint nostrum quo obcaecati dolores dolor qui?</p></div>
+      </div>
+
+
+
+
+      </section>
+
+
+      <footer>
+        <div>
+        <p>© 2023 Copyright by Hammad</p>
+        </div>
+      </footer>
+      
+
+
+
+
+
+
+      
+
+
+      <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Graphic Designer', 'Web Designer'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
